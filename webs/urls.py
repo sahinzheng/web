@@ -14,4 +14,5 @@ urlpatterns = [
     #2、Django在检查请求的URL时，这个模式与这样的URL匹配：基础URL后面跟着topics。
     #3、可以在末尾包含斜杠，也可以省略它，但单词topics后面不能有任何东西，否则就与该模式不匹配。
     #4、其URL与该模式匹配的请求都将交给views.py中的函数topics()进行处理。
+    path('topics/(?P<topic_id>\d+)/',views.topic,name='topic'),
 ]

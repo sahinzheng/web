@@ -3,7 +3,9 @@
 	<p>诗词</p>
 		<ul>
 			{% for topic in topics %}
-				<li>{{topic}}</li>
+				<li>
+				<a href="{%url 'webs:topic' topic.id %}">{{topic}}</a>
+				</li>
 			{% empty %}
 				<li>目前没有创建任何的主题</li>
 			{% endfor %}
