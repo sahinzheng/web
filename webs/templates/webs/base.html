@@ -1,0 +1,13 @@
+<p>
+	<a href="{% url 'webs:index' %}">棱锐知识</a>
+	<!--
+	1、这个文件的第一部分创建一个包含项目名的段落，该段落也是一个主页的连接。
+	2、为创建链接，我们使用了一个模板标签，它是用大括号和百分号（）表示的。
+	3、模板标签是一小段代码，生成要在网页中显示的信息。
+	4、在这个实例中，模板标签{% url 'webs:index' %}生成一个URL，
+	5、该URL与webs/urls.py中定义的名为index的URL模式匹配。
+	6、在这个实例中，webs是一个命名空间，而index是该命名空间中一个名词独特的URL模式。
+	-->
+	<a href="{% url 'webs:topics' %}">诗词</a>
+</p>
+{% block content %}{% endblock content %}
